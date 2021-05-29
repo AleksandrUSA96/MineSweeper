@@ -1,0 +1,131 @@
+body {
+    height: 100vh;
+    margin: auto;
+    width: 100%;
+    display: flex;
+}
+
+#app {
+    text-align: center;
+    position: relative;
+    height: max-content;
+    margin: auto;
+}
+
+.sapper {
+    border: 3px solid #b05fff;
+    padding: 20px;
+    display: inline-block;
+    filter: drop-shadow(2px 0px 16px #762fbb);
+    background-color: #500996;
+    box-shadow: inset 1px 1px 20px 4px #c08ef5;
+    border-radius: 20px;
+    animation: shadow  2s infinite ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.sapper div {
+    height: 20px;
+    margin: 1px;
+    padding: 0;
+}
+
+.sapper img {
+    width: 20px;
+    height: 20px;
+    margin: 1px;
+    filter: drop-shadow(2px 0px 16px #762fbb);
+}
+
+.highlight__modal__window {
+    background-color: #4040409c;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.modal__window {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    background-color: #c08ef5;
+    border-radius: 10px;
+    border: 3px solid #b05fff;
+    color: #5f037dd1;
+    height: max-content;
+    opacity: 1;
+    margin: auto;
+    font-size: 18px;
+    width: 300px;
+    padding: 10px 15px;
+    box-shadow: inset 1px 1px 20px 4px #e9d4ff;
+    text-align: center;
+}
+
+.buttons__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 10px;
+}
+
+.start__new__game {
+    background-color: #192cdc;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color .2s ease-in;
+}
+
+.start__new__game:hover {
+    background-color: #010b69;
+    transition: background-color .2s ease-out;
+}
+
+.close__window {
+    background-color: #dc1919;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color .2s ease-out;
+}
+
+.close__window:hover {
+    background-color: #860000;
+    transition: background-color .2s ease-in;
+}
+
+.info__for__user {
+    margin-bottom: 10px;
+    background-color: blueviolet;
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+    padding: 10px;
+    font-family: fangsong;
+    width: max-content;
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 20px 4px #c08ef5;
+    filter: drop-shadow(2px 0px 16px #762fbb);
+    border: 1px solid #b05fff;
+    animation: shadow  2s infinite ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shadow {
+    from {
+        filter: drop-shadow(2px 0px 16px #762fbb);
+    }
+    50% {
+        filter: drop-shadow(5px 0px 20px #500996);
+    }
+    to {
+        filter: drop-shadow(2px 0px 16px #762fbb);
+    }
+}
